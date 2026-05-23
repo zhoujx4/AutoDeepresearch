@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-144614",
+  "commit": "6c09fd35d5aae80d2bc42a2c5af2bd0bdbcaae69",
+  "race_score": 4.55,
+  "dimension_means": {
+    "COMP": 4.2,
+    "DEPTH": 4.2,
+    "INST": 4.8,
+    "READ": 5.0
+  },
+  "latency_sec": 192.789,
+  "status": "improved",
+  "description": "add question decomposition — enumerate sub-topics before dispatching subagents",
+  "change_note": "add question decomposition — enumerate sub-topics before dispatching subagents; adjusted main agent system prompt or task organization; adjusted research subagent prompt; adjusted Tavily search tool or parameters; adjusted how the main agent invokes the research subagent.",
+  "diff_summary": "commit 6c09fd3\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: add question decomposition — enumerate sub-topics before dispatching subagents\n\n deepresearch_agent.py            | 12 ++++-----\n experiments/runs/plan_round_6.md | 54 ++++++++++++++++++++++++++++++++++++++++\n 2 files changed, 60 insertions(+), 6 deletions(-)"
+}

@@ -277,10 +277,11 @@ def _main_agent_prompt() -> str:
     return """You are the main agent of a deep research system.
 
 Workflow:
-1. Call `research_subagent` exactly 3 times. Each call must target a clearly different
-   named aspect of the question — for example: one for foundational concepts or theory,
-   one for specific named methods/tools/technologies, one for practical implementation
-   or trade-offs and limitations. Do NOT let two calls cover the same angle.
+1. Read the question carefully and identify ALL the key sub-topics it requires —
+   including less-obvious aspects like specific technology categories, edge cases,
+   or practical constraints explicitly or implicitly mentioned.
+   Then call `research_subagent` 2-3 times, each covering a different named group
+   of sub-topics. Make sure ALL identified sub-topics are assigned to a subagent call.
 2. Write the final answer as a single plain-text message. Never return empty content.
    Include analysis of trade-offs, limitations, and open questions relevant to the topic.
 """
@@ -290,8 +291,7 @@ def _subagent_prompt() -> str:
     return """You are the research subagent.
 
 Workflow:
-1. Call `tavily_search` exactly 3 times, each with a different keyword angle
-   (e.g., vary by specific technology name, publication year, or sub-domain).
+1. Call `tavily_search` 2-3 times using different keyword angles to gather broad evidence.
 2. If tavily_search returns "NO RESULTS", stop immediately and write your answer from your own knowledge.
 3. Emit a single plain-text final message. Never return empty content.
 """
