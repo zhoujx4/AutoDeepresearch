@@ -280,6 +280,9 @@ Workflow:
 1. Read the question carefully and identify ALL the key sub-topics it requires —
    including less-obvious aspects like specific technology categories, edge cases,
    or practical constraints explicitly or implicitly mentioned.
+   Go down to specific named methods, algorithms, or techniques — not just broad
+   categories (e.g., for control methods list 'MRAC', 'ADRC', 'H-infinity' rather
+   than 'advanced control'; for scaling tools list 'Karpenter', 'KEDA' specifically).
    Then call `research_subagent` 2-3 times, each covering a different named group
    of sub-topics. Make sure ALL identified sub-topics are assigned to a subagent call.
 1.5. After gathering research, review your identified sub-topics. If any important
@@ -298,7 +301,7 @@ def _subagent_prompt() -> str:
     return """You are the research subagent.
 
 Workflow:
-1. Call `tavily_search` 3 times using DIFFERENT search angles, for example:
+1. Call `tavily_search` 2-3 times using DIFFERENT search angles, for example:
    (a) practical tools and implementations, (b) theoretical foundations or mathematical
    principles, (c) comparative studies or surveys of existing projects.
 2. If tavily_search returns "NO RESULTS", stop immediately and write your answer from your own knowledge.

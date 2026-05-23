@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-153342",
+  "commit": "254dd0ffd391ea6977f6f2c51d23d129bcc20d94",
+  "race_score": 4.75,
+  "dimension_means": {
+    "COMP": 4.6,
+    "DEPTH": 4.6,
+    "INST": 5.0,
+    "READ": 4.8
+  },
+  "latency_sec": 260.24,
+  "status": "recorded",
+  "description": "granular sub-topic decomposition to specific methods + revert to 2-3 searches",
+  "change_note": "granular sub-topic decomposition to specific methods + revert to 2-3 searches; adjusted research subagent prompt; adjusted Tavily search tool or parameters; adjusted how the main agent invokes the research subagent.",
+  "diff_summary": "commit 254dd0f\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: granular sub-topic decomposition to specific methods + revert to 2-3 searches\n\n deepresearch_agent.py             |  5 +++-\n experiments/runs/plan_round_13.md | 55 +++++++++++++++++++++++++++++++++++++++\n 2 files changed, 59 insertions(+), 1 deletion(-)"
+}
