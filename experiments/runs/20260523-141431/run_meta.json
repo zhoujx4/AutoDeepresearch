@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-141431",
+  "commit": "fc6c3de6334afe362d7ae7b63ca5917444af9527",
+  "race_score": 4.2,
+  "dimension_means": {
+    "COMP": 3.8,
+    "DEPTH": 3.8,
+    "INST": 4.6,
+    "READ": 4.6
+  },
+  "latency_sec": 206.861,
+  "status": "improved",
+  "description": "baseline — measure starting RACE score with no agent changes",
+  "change_note": "baseline — measure starting RACE score with no agent changes; modified deep research agent implementation details.",
+  "diff_summary": "commit fc6c3de\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: baseline — measure starting RACE score with no agent changes\n\n experiments/runs/plan_round_1.md | 39 +++++++++++++++++++++++++++++++++++++++\n 1 file changed, 39 insertions(+)"
+}

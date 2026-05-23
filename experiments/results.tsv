@@ -1,0 +1,2 @@
+commit	race_score	COMP	DEPTH	INST	READ	latency_sec	agent_tokens	judge_tokens	total_tokens	agent_llm_calls	status	description	change_note
+fc6c3de6334afe362d7ae7b63ca5917444af9527	4.2000	3.8000	3.8000	4.6000	4.6000	206.861	188795	85389	274184	61	improved	baseline — measure starting RACE score with no agent changes	baseline — measure starting RACE score with no agent changes; modified deep research agent implementation details.
