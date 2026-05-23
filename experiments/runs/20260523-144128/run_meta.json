@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-144128",
+  "commit": "e148aaabddcd6dc8cb0517f550d61da4406c463d",
+  "race_score": 4.05,
+  "dimension_means": {
+    "COMP": 3.4,
+    "DEPTH": 3.8,
+    "INST": 4.4,
+    "READ": 4.6
+  },
+  "latency_sec": 168.602,
+  "status": "recorded",
+  "description": "force exactly 3 subagent calls and 3 searches each to maximise topic coverage",
+  "change_note": "force exactly 3 subagent calls and 3 searches each to maximise topic coverage; adjusted main agent system prompt or task organization; adjusted research subagent prompt; adjusted Tavily search tool or parameters; adjusted how the main agent invokes the research subagent.",
+  "diff_summary": "commit e148aaa\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: force exactly 3 subagent calls and 3 searches each to maximise topic coverage\n\n deepresearch_agent.py            | 11 +++++----\n experiments/runs/plan_round_5.md | 50 ++++++++++++++++++++++++++++++++++++++++\n 2 files changed, 56 insertions(+), 5 deletions(-)"
+}
