@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-155741",
+  "commit": "fcee258b489691d427baac850fbaed01ad736650",
+  "race_score": 4.8,
+  "dimension_means": {
+    "COMP": 4.6,
+    "DEPTH": 4.6,
+    "INST": 5.0,
+    "READ": 5.0
+  },
+  "latency_sec": 233.103,
+  "status": "recorded",
+  "description": "pure revert to R10 configuration — remove formatting hint",
+  "change_note": "pure revert to R10 configuration — remove formatting hint; modified deep research agent implementation details; deepresearch_agent.py | 2 --;  1 file changed, 2 deletions(-).",
+  "diff_summary": "commit fcee258\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: pure revert to R10 configuration — remove formatting hint\n\n deepresearch_agent.py             |  2 --\n experiments/runs/plan_round_17.md | 59 +++++++++++++++++++++++++++++++++++++++\n 2 files changed, 59 insertions(+), 2 deletions(-)"
+}

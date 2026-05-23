@@ -291,8 +291,6 @@ Workflow:
    mechanism of operation, not just its practical use.
    For questions about social, behavioral, or cultural impacts, include specific
    examples from diverse cultural and demographic contexts, not just general statements.
-   When covering many specific methods or tools, use clear tables and structured lists
-   rather than dense prose to maintain readability.
 """
 
 
