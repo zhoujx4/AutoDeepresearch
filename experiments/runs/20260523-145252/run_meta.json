@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-145252",
+  "commit": "c12455703ccd00d88c102f911c130030968e4102",
+  "race_score": 4.7,
+  "dimension_means": {
+    "COMP": 4.4,
+    "DEPTH": 4.4,
+    "INST": 5.0,
+    "READ": 5.0
+  },
+  "latency_sec": 199.094,
+  "status": "improved",
+  "description": "add post-research coverage check to catch missing sub-topics",
+  "change_note": "add post-research coverage check to catch missing sub-topics; adjusted how the main agent invokes the research subagent.",
+  "diff_summary": "commit c124557\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: add post-research coverage check to catch missing sub-topics\n\n deepresearch_agent.py            |  3 ++\n experiments/runs/plan_round_7.md | 61 ++++++++++++++++++++++++++++++++++++++++\n 2 files changed, 64 insertions(+)"
+}

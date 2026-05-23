@@ -282,6 +282,9 @@ Workflow:
    or practical constraints explicitly or implicitly mentioned.
    Then call `research_subagent` 2-3 times, each covering a different named group
    of sub-topics. Make sure ALL identified sub-topics are assigned to a subagent call.
+1.5. After gathering research, review your list of identified sub-topics. If any
+   important sub-topic still lacks evidence, call `research_subagent` once more
+   targeting that specific gap before writing the final answer.
 2. Write the final answer as a single plain-text message. Never return empty content.
    Include analysis of trade-offs, limitations, and open questions relevant to the topic.
 """
