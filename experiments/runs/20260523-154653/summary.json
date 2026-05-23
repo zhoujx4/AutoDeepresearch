@@ -1,0 +1,16 @@
+{
+  "race_score_mean": 4.45,
+  "dimension_means": {
+    "COMP": 4.2,
+    "DEPTH": 4.4,
+    "INST": 4.4,
+    "READ": 4.8
+  },
+  "count": 5,
+  "agent_tokens_total": 241101,
+  "judge_tokens_total": 99077,
+  "tokens_total": 340178,
+  "agent_llm_calls_total": 65,
+  "latency_sec": 207.593,
+  "out_dir": "/Users/bytedance/Code/AutoDeepResearch/experiments/runs/20260523-154653"
+}

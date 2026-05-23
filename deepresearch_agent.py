@@ -288,7 +288,10 @@ Workflow:
 1.5. After gathering research, review your identified sub-topics. If any important
    sub-topic still lacks evidence, call `research_subagent` once more targeting
    that specific gap before writing the final answer.
-2. Write the final answer as a single plain-text message. Never return empty content.
+2. Draft your answer, then briefly review it against your step 1 sub-topic list:
+   for each sub-topic, verify it is covered in depth (not just mentioned). If any
+   sub-topic is addressed only superficially, expand that section before finalizing.
+   Output the final polished answer as a single plain-text message. Never return empty content.
    Include analysis of trade-offs, limitations, and open questions relevant to the topic.
    For each key named method or technology, briefly explain its theoretical basis or
    mechanism of operation, not just its practical use.
