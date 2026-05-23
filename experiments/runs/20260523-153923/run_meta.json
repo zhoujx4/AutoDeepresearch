@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-153923",
+  "commit": "87035842ab032c6b52ea941f54961ba7215ffbe4",
+  "race_score": 4.8,
+  "dimension_means": {
+    "COMP": 4.6,
+    "DEPTH": 4.8,
+    "INST": 5.0,
+    "READ": 4.8
+  },
+  "latency_sec": 259.333,
+  "status": "recorded",
+  "description": "remove tool-list example to prevent density regression in drb_en_68",
+  "change_note": "remove tool-list example to prevent density regression in drb_en_68; adjusted how the main agent invokes the research subagent.",
+  "diff_summary": "commit 8703584\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: remove tool-list example to prevent density regression in drb_en_68\n\n deepresearch_agent.py             |  2 +-\n experiments/runs/plan_round_14.md | 51 +++++++++++++++++++++++++++++++++++++++\n 2 files changed, 52 insertions(+), 1 deletion(-)"
+}

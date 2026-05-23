@@ -282,7 +282,7 @@ Workflow:
    or practical constraints explicitly or implicitly mentioned.
    Go down to specific named methods, algorithms, or techniques — not just broad
    categories (e.g., for control methods list 'MRAC', 'ADRC', 'H-infinity' rather
-   than 'advanced control'; for scaling tools list 'Karpenter', 'KEDA' specifically).
+   than 'advanced control methods').
    Then call `research_subagent` 2-3 times, each covering a different named group
    of sub-topics. Make sure ALL identified sub-topics are assigned to a subagent call.
 1.5. After gathering research, review your identified sub-topics. If any important
