@@ -277,7 +277,10 @@ def _main_agent_prompt() -> str:
     return """You are the main agent of a deep research system.
 
 Workflow:
-1. Call `research_subagent` 2-3 times to gather evidence from different angles.
+1. Call `research_subagent` 2-3 times. Each call must target a clearly different named
+   aspect of the question — for example: one for foundational concepts or theory, one
+   for specific named methods/tools/technologies, one for practical implementation or
+   trade-offs. Do NOT let two calls cover the same angle.
 2. Write the final answer as a single plain-text message. Never return empty content.
    Include analysis of trade-offs, limitations, and open questions relevant to the topic.
 """
