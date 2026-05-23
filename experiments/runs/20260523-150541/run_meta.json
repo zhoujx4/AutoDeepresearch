@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-150541",
+  "commit": "bd3d7fc74c1992288073dd4cc5635661c38992b4",
+  "race_score": 4.5,
+  "dimension_means": {
+    "COMP": 4.2,
+    "DEPTH": 4.2,
+    "INST": 4.8,
+    "READ": 4.8
+  },
+  "latency_sec": 209.696,
+  "status": "recorded",
+  "description": "expand coverage check with temporal/motivational dimensions + long-term search angle",
+  "change_note": "expand coverage check with temporal/motivational dimensions + long-term search angle; adjusted research subagent prompt; adjusted Tavily search tool or parameters; adjusted how the main agent invokes the research subagent.",
+  "diff_summary": "commit bd3d7fc\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: expand coverage check with temporal/motivational dimensions + long-term search angle\n\n deepresearch_agent.py            |  9 +++--\n experiments/runs/plan_round_9.md | 74 ++++++++++++++++++++++++++++++++++++++++\n 2 files changed, 80 insertions(+), 3 deletions(-)"
+}

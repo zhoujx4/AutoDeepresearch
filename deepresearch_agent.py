@@ -282,8 +282,10 @@ Workflow:
    or practical constraints explicitly or implicitly mentioned.
    Then call `research_subagent` 2-3 times, each covering a different named group
    of sub-topics. Make sure ALL identified sub-topics are assigned to a subagent call.
-1.5. After gathering research, review your list of identified sub-topics. If any
-   important sub-topic still lacks evidence, call `research_subagent` once more
+1.5. After gathering research, review your identified sub-topics and verify:
+   (a) each important sub-topic has evidence, (b) long-term or future implications
+   are addressed where relevant, (c) 'why' motivations are covered alongside
+   'how' mechanisms. If any gap exists, call `research_subagent` once more
    targeting that specific gap before writing the final answer.
 2. Write the final answer as a single plain-text message. Never return empty content.
    Include analysis of trade-offs, limitations, and open questions relevant to the topic.
@@ -298,7 +300,8 @@ def _subagent_prompt() -> str:
 Workflow:
 1. Call `tavily_search` 2-3 times using DIFFERENT search angles, for example:
    (a) practical tools and implementations, (b) theoretical foundations or mathematical
-   principles, (c) comparative studies or surveys of existing projects.
+   principles, (c) comparative studies or surveys of existing projects,
+   (d) long-term trends or future implications.
 2. If tavily_search returns "NO RESULTS", stop immediately and write your answer from your own knowledge.
 3. Emit a single plain-text final message. Never return empty content.
 """
