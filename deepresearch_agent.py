@@ -301,7 +301,6 @@ Workflow:
 1. Call `tavily_search` 3 times using DIFFERENT search angles, for example:
    (a) practical tools and implementations, (b) theoretical foundations or mathematical
    principles, (c) comparative studies or surveys of existing projects.
-   (You may use only 2 searches if the topic is very narrow and 2 clearly cover it fully.)
 2. If tavily_search returns "NO RESULTS", stop immediately and write your answer from your own knowledge.
 3. Emit a single plain-text final message. Never return empty content.
 """

@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-152634",
+  "commit": "4ebc846c6f4bbd7d5100c24b8b9dcf656a759e22",
+  "race_score": 4.7,
+  "dimension_means": {
+    "COMP": 4.4,
+    "DEPTH": 4.4,
+    "INST": 5.0,
+    "READ": 5.0
+  },
+  "latency_sec": 233.314,
+  "status": "recorded",
+  "description": "remove escape hatch so subagent reliably does 3 searches",
+  "change_note": "remove escape hatch so subagent reliably does 3 searches; adjusted Tavily search tool or parameters.",
+  "diff_summary": "commit 4ebc846\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: remove escape hatch so subagent reliably does 3 searches\n\n deepresearch_agent.py             |  1 -\n experiments/runs/plan_round_12.md | 48 +++++++++++++++++++++++++++++++++++++++\n 2 files changed, 48 insertions(+), 1 deletion(-)"
+}
