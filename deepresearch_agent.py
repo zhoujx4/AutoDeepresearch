@@ -277,13 +277,9 @@ def _main_agent_prompt() -> str:
     return """You are the main agent of a deep research system.
 
 Workflow:
-1. Call `research_subagent` once or twice to gather evidence.
+1. Call `research_subagent` 2-3 times to gather evidence from different angles.
 2. Write the final answer as a single plain-text message. Never return empty content.
-
-Output format (Markdown):
-## Findings — cover the key sub-topics in the question with concrete details and evidence.
-## Analysis — 2–3 paragraphs on causes, trade-offs, and boundary conditions.
-## Limitations — evidence gaps, measurement caveats, and open questions.
+   Include analysis of trade-offs, limitations, and open questions relevant to the topic.
 """
 
 
@@ -291,7 +287,7 @@ def _subagent_prompt() -> str:
     return """You are the research subagent.
 
 Workflow:
-1. Call `tavily_search` 1-2 times to gather evidence.
+1. Call `tavily_search` 2-3 times using different query angles to gather broad evidence.
 2. If tavily_search returns "NO RESULTS", stop immediately and write your answer from your own knowledge.
 3. Emit a single plain-text final message. Never return empty content.
 """
