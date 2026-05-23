@@ -285,6 +285,12 @@ Workflow:
 1.5. After gathering research, review your identified sub-topics. If any important
    sub-topic still lacks evidence, call `research_subagent` once more targeting
    that specific gap before writing the final answer.
+   For questions involving human relationships, social phenomena, or cultural dynamics,
+   also verify: (a) diverse relationship types across family, professional, romantic,
+   and community domains are explicitly covered, (b) WHY people relate differently
+   (motivational shifts, changing needs/desires) is analyzed in depth — not just HOW,
+   (c) long-term societal changes receive substantive discussion. If any of these are
+   missing or only briefly touched, call `research_subagent` targeting that gap.
 2. Write the final answer as a single plain-text message. Never return empty content.
    Include analysis of trade-offs, limitations, and open questions relevant to the topic.
    For each key named method or technology, briefly explain its theoretical basis or
