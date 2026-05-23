@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-155231",
+  "commit": "fd71fbfb3c65d0acae962cfa397154ebeb95c3bd",
+  "race_score": 4.7,
+  "dimension_means": {
+    "COMP": 4.4,
+    "DEPTH": 4.6,
+    "INST": 4.8,
+    "READ": 5.0
+  },
+  "latency_sec": 208.661,
+  "status": "recorded",
+  "description": "revert R14+R15, add readability formatting hint for tables over dense prose",
+  "change_note": "revert R14+R15, add readability formatting hint for tables over dense prose; adjusted how the main agent invokes the research subagent.",
+  "diff_summary": "commit fd71fbf\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: revert R14+R15, add readability formatting hint for tables over dense prose\n\n deepresearch_agent.py             | 10 +++-----\n experiments/runs/plan_round_16.md | 54 +++++++++++++++++++++++++++++++++++++++\n 2 files changed, 57 insertions(+), 7 deletions(-)"
+}
