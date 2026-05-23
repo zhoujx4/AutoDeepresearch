@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-145952",
+  "commit": "426cf02b040d6e19d932b556acbc1b11d48efe22",
+  "race_score": 4.8,
+  "dimension_means": {
+    "COMP": 4.6,
+    "DEPTH": 4.6,
+    "INST": 5.0,
+    "READ": 5.0
+  },
+  "latency_sec": 224.53,
+  "status": "improved",
+  "description": "structured search angles + depth hint for theoretical/mechanistic coverage",
+  "change_note": "structured search angles + depth hint for theoretical/mechanistic coverage; adjusted research subagent prompt; adjusted Tavily search tool or parameters.",
+  "diff_summary": "commit 426cf02\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: structured search angles + depth hint for theoretical/mechanistic coverage\n\n deepresearch_agent.py            |  6 +++-\n experiments/runs/plan_round_8.md | 69 ++++++++++++++++++++++++++++++++++++++++\n 2 files changed, 74 insertions(+), 1 deletion(-)"
+}

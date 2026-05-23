@@ -287,6 +287,8 @@ Workflow:
    targeting that specific gap before writing the final answer.
 2. Write the final answer as a single plain-text message. Never return empty content.
    Include analysis of trade-offs, limitations, and open questions relevant to the topic.
+   For each key named method or technology, briefly explain its theoretical basis or
+   mechanism of operation, not just its practical use.
 """
 
 
@@ -294,7 +296,9 @@ def _subagent_prompt() -> str:
     return """You are the research subagent.
 
 Workflow:
-1. Call `tavily_search` 2-3 times using different keyword angles to gather broad evidence.
+1. Call `tavily_search` 2-3 times using DIFFERENT search angles, for example:
+   (a) practical tools and implementations, (b) theoretical foundations or mathematical
+   principles, (c) comparative studies or surveys of existing projects.
 2. If tavily_search returns "NO RESULTS", stop immediately and write your answer from your own knowledge.
 3. Emit a single plain-text final message. Never return empty content.
 """
