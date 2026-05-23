@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-142752",
+  "commit": "a87aac94449055dcb1cae91137004e64958ab999",
+  "race_score": 3.8,
+  "dimension_means": {
+    "COMP": 3.4,
+    "DEPTH": 4.0,
+    "INST": 3.6,
+    "READ": 4.2
+  },
+  "latency_sec": 132.82,
+  "status": "recorded",
+  "description": "add structured output format (Findings/Analysis/Limitations) to main agent prompt",
+  "change_note": "add structured output format (Findings/Analysis/Limitations) to main agent prompt; adjusted main agent system prompt or task organization; adjusted Tavily search tool or parameters; adjusted how the main agent invokes the research subagent; adjusted model generation parameters.",
+  "diff_summary": "commit a87aac9\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: add structured output format (Findings/Analysis/Limitations) to main agent prompt\n\n deepresearch_agent.py | 7 ++++++-\n 1 file changed, 6 insertions(+), 1 deletion(-)"
+}

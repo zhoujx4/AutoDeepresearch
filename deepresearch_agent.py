@@ -36,7 +36,7 @@ TAVILY_SEARCH_URL = os.getenv("TAVILY_SEARCH_URL", "https://api.tavily.com/searc
 TAVILY_SEARCH_DEPTH = os.getenv("TAVILY_SEARCH_DEPTH", "basic")
 TAVILY_MAX_RESULTS = max(int(os.getenv("TAVILY_MAX_RESULTS", "5")), 5)
 MAX_TOKENS = 32000
-RECURSION_LIMIT = 50
+RECURSION_LIMIT = 100
 SYNTHESIS_PROMPT_VERSION = "v1-minimal-prompts"
 MODEL_EXTRA_BODY: dict[str, Any] = {"thinking": {"type": "disabled"}}
 
@@ -279,6 +279,11 @@ def _main_agent_prompt() -> str:
 Workflow:
 1. Call `research_subagent` once or twice to gather evidence.
 2. Write the final answer as a single plain-text message. Never return empty content.
+
+Output format (Markdown):
+## Findings — cover the key sub-topics in the question with concrete details and evidence.
+## Analysis — 2–3 paragraphs on causes, trade-offs, and boundary conditions.
+## Limitations — evidence gaps, measurement caveats, and open questions.
 """
 
 
