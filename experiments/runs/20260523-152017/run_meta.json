@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-152017",
+  "commit": "e05cc0c2b64e2fc75ebecf72ace1587c33b35488",
+  "race_score": 4.8,
+  "dimension_means": {
+    "COMP": 4.6,
+    "DEPTH": 4.6,
+    "INST": 5.0,
+    "READ": 5.0
+  },
+  "latency_sec": 182.432,
+  "status": "recorded",
+  "description": "default subagent to 3 searches for deeper per-sub-topic evidence",
+  "change_note": "default subagent to 3 searches for deeper per-sub-topic evidence; adjusted research subagent prompt; adjusted Tavily search tool or parameters.",
+  "diff_summary": "commit e05cc0c\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: default subagent to 3 searches for deeper per-sub-topic evidence\n\n deepresearch_agent.py             |  3 ++-\n experiments/runs/plan_round_11.md | 55 +++++++++++++++++++++++++++++++++++++++\n 2 files changed, 57 insertions(+), 1 deletion(-)"
+}
