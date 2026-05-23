@@ -1,0 +1,16 @@
+{
+  "run_id": "20260523-151400",
+  "commit": "dee225d304c255d60abdc7bca993bc21639af26e",
+  "race_score": 4.8,
+  "dimension_means": {
+    "COMP": 4.6,
+    "DEPTH": 4.6,
+    "INST": 5.0,
+    "READ": 5.0
+  },
+  "latency_sec": 190.268,
+  "status": "recorded",
+  "description": "revert R9 regression, add sociocultural synthesis hint for drb_en_100",
+  "change_note": "revert R9 regression, add sociocultural synthesis hint for drb_en_100; adjusted research subagent prompt; adjusted Tavily search tool or parameters; adjusted how the main agent invokes the research subagent.",
+  "diff_summary": "commit dee225d\nAuthor: junius <zhoujx4@foxmail.com>\n\n    experiment: revert R9 regression, add sociocultural synthesis hint for drb_en_100\n\n deepresearch_agent.py             | 13 ++++-----\n experiments/runs/plan_round_10.md | 60 +++++++++++++++++++++++++++++++++++++++\n 2 files changed, 66 insertions(+), 7 deletions(-)"
+}
